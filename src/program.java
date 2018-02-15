@@ -1,8 +1,6 @@
-package com.company;
-
 import java.util.Scanner;
 
-public class Main {
+public class program {
 
 
     public static int[][] computeTF(int mat[][], String p, String alf){
@@ -56,14 +54,15 @@ public class Main {
 
 
     public static void main(String[] args) {
-        Scanner stdin = new Scanner(System.in);
-        String alf = stdin.next();
-        String p = stdin.next();
-        String t = stdin.next();
+        Scanner r = new Scanner(System.in);
+        String alf = r.next();
+        String p = r.next();
+        String t = r.next();
         int[][] vacio= new int[(p.length()+1)][alf.length()];
         int[][] mat= computeTF(vacio,p,alf);
         int m=p.length();
         matcher(t,alf,m,mat);
 
     }
+
 }
